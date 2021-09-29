@@ -45,7 +45,7 @@ class Countkey():
             print(dep_text)
             for words in dep_text:
                 if words in c_Keywords:
-                    print(words)
+                    #print(words)
                     self.keynum=self.keynum+1
             print("keynums: ", self.keynum)
         elif self.level==2:
@@ -54,7 +54,7 @@ class Countkey():
             dep_3_text = dep_2_text.replace(":\n", " :\n")
             dep_4_text = dep_3_text.replace("{", " {")
             dep_text = dep_4_text.split(" ")
-            print(dep_text)
+            #print(dep_text)
             '''for line in text:
                 while line.find('switch'):
                     pass
@@ -87,7 +87,7 @@ class Countkey():
             dep_4_text = dep_3_text.replace("{", " {")
             dep_5_text = dep_4_text.replace("else if", " elif")
             dep_text = dep_5_text.split(" ")
-            print(dep_text)
+            #print(dep_text)
             elif_state = 0
 
             s = []
@@ -95,15 +95,15 @@ class Countkey():
 
                 if words =='if':
                     s.append(words)
-                    print(s)
+                    #print(s)
 
                 if words == 'elif':
                     s.append(words)
-                    print(s)
+                    #print(s)
                 if words == 'else':
                     for i in range(len(s)):
                         temp = s.pop()
-                        print(s)
+                        #print(s)
                         if temp == 'elif':
                             elif_state = 1
                         elif temp == 'if':
