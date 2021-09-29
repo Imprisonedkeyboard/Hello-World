@@ -1,0 +1,10 @@
+file = r'C:\Users\Administrator\Desktop\软工\作业\Lab2示例.c'
+myfile1 = Countkey(file, 1)
+myfile1.del_comment_c()
+myfile1.Find()
+myfile2 = Countkey(file, 2)
+myfile2.del_comment_c()
+myfile2.Find()
+myfile3 = Countkey(file, 3)
+myfile3.del_comment_c()
+myfile3.Find()
